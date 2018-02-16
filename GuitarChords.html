@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+  <title>Guitar Chords</title>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <h1>
+        Guitar Chord Finder
+      </h1>
+
+      <div class="guitar">
+        <div class="open_strings">
+        <ul>
+          <li>e</li>
+          <li>B</li>
+          <li>G</li>
+          <li>D</li>
+          <li>A</li>
+          <li>E</li>
+        </ul></div>
+
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+        <div class="fret"></div>
+
+        <div class="dots1"></div>
+        <div class="dots2"></div>
+        <div class="dots3"></div>
+        <div class="dots4"></div>
+        <div class="dots5"></div>
+
+        <div class="string1"></div>
+        <div class="string2"></div>
+        <div class="string3"></div>
+        <div class="string4"></div>
+        <div class="string5"></div>
+        <div class="string6"></div>
+
+        <div class="notes">
+          <div class="notes1"><ul></ul></div>
+          <div class="notes2"><ul></ul></div>
+          <div class="notes3"><ul></ul></div>
+          <div class="notes4"><ul></ul></div>
+          <div class="notes5"><ul></ul></div>
+          <div class="notes6"><ul></ul></div>
+        </div>
+
+      </div>
+
+      <p>
+      Root:
+       <select id="root" class="drop-down">
+         <option value="E">E</option>
+         <option value="F">F</option>
+         <option value="F#">F#</option>
+         <option value="G">G</option>
+         <option value="G#">G#</option>
+         <option value="A">A</option>
+         <option value="A#">A#</option>
+         <option value="B">B</option>
+         <option value="C">C</option>
+         <option value="C#">C#</option>
+         <option value="D">D</option>
+         <option value="D#">D#</option>
+       </select>
+
+      Chord Type:
+       <select id="type" class="drop-down">
+         <option value="Major">Major</option>
+         <option value="Minor">Minor</option>
+         <option value="Seventh">Seventh</option>
+       </select>
+
+        <br><br>
+
+       <button onclick="launch()">
+         Accept
+       </button>
+      </p>
+
+
+    </body>
+
+</html>

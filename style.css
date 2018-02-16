@@ -1,0 +1,306 @@
+body {
+  background-color: #BBBBB4;
+}
+
+p {
+  text-align: left;
+  margin-left: 90px;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: black;
+  font-size: 30;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.drop-down {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 5px;
+}
+
+button {
+  margin-right: 50px;
+}
+
+.guitar {
+  margin: auto;
+  margin-bottom: 50px;
+	width: 1215px;
+  height: 200px;
+  background: #8F642F;
+}
+
+.open_strings {
+  position: absolute;
+  width: 50px;
+  margin-left: -50px;
+  height: 200px;
+  background: #3d3d29;
+}
+
+.open_strings ul {
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 32px;
+  margin-left: -20px;
+  margin-top: 2px;
+}
+
+.fret {
+  float: left;
+  margin-right: 75px;
+  width: 4px;
+  height: 200px;
+  background: #d9d9d9;
+	border-right: 2px solid #CCB266;
+}
+
+.dots1 {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 358px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3d3d29;
+}
+
+.dots2 {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 520px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3d3d29;
+}
+
+.dots3 {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 682px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3d3d29;
+}
+
+.dots4 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 925px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3d3d29;
+}
+
+.dots5 {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 925px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3d3d29;
+}
+
+.string1 {
+  position: absolute;
+  margin-top: 18px;
+  width: 1215px;
+  height: 2px;
+  background: #b8b894;
+}
+
+.string2 {
+  position: absolute;
+  margin-top: 50px;
+  width: 1215px;
+  height: 2px;
+  background: #b8b894;
+}
+
+.string3 {
+  position: absolute;
+  margin-top: 82px;
+  width: 1215px;
+  height: 3px;
+  background: #b8b894;
+}
+
+.string4 {
+  position: absolute;
+  margin-top: 117px;
+  width: 1215px;
+  height: 3px;
+  background: #b8b894;
+}
+
+.string5 {
+  position: absolute;
+  margin-top: 148px;
+  width: 1215px;
+  height: 4px;
+  background: #b8b894;
+}
+
+.string6 {
+  position: absolute;
+  margin-top: 180px;
+  width: 1215px;
+  height: 4px;
+  background: #b8b894;
+}
+
+.notes {
+  position: absolute;
+  width: 1075px;
+  height: 200px;
+  margin-left: -10px;
+  margin-top: -10px;
+
+}
+
+.notes .notes1 ul {
+  position: relative;
+  float: left;
+}
+
+.notes .notes1 ul li {
+  position: relative;
+  float: left;
+  margin-top: -2px;
+  margin-right: 51px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes1 :empty{
+   opacity: 0;
+}
+
+.notes .notes2 ul li {
+  position: relative;
+  float: left;
+  margin-top: -14px;
+  margin-right: 51px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes2 :empty{
+   opacity: 0;
+}
+
+.notes .notes3 ul li {
+  position: relative;
+  float: left;
+  margin-right: 51px;
+  margin-top: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes3 :empty{
+   opacity: 0;
+}
+
+.notes .notes4 ul li {
+  position: relative;
+  float: left;
+  margin-top: 4px;
+  margin-right: 51px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes4 :empty{
+   opacity: 0;
+}
+
+.notes .notes5 ul li {
+  position: relative;
+  float: left;
+  margin-top: 3px;
+  margin-right: 51px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes5 :empty{
+   opacity: 0;
+}
+
+.notes .notes6 ul li {
+  position: relative;
+  float: left;
+  margin-top: 2px;
+  margin-right: 51px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fa990f;
+  line-height: 30px;
+  list-style: none;
+  color: white;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.notes .notes6 :empty{
+   opacity: 0;
+}
+
+
+
+
+
+
+/* id uses #, class uses . */
+
+
