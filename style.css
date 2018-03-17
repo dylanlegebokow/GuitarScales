@@ -10,6 +10,15 @@ p {
   font-weight: bold;
 }
 
+p.paragraph2 {
+  text-align: left;
+  margin-left: 90px;
+  margin-right: 90px;
+  text-transform: none;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   color: black;
   font-size: 30;
@@ -19,21 +28,90 @@ h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+
+
+
+
 .drop-down {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
+  font-size: 15px;
   margin-right: 25px;
   margin-left: 5px;
+  background-color: white;
+  height: 30px;
+  width: 150px;
+  border-radius: 6px;
+  color: #8F642F;
+  background-color: white;
 }
 
-button {
-  margin-right: 50px;
+
+
+
+
+.button {
+  display: inline-block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  border-radius: 6px;
+  background-color: #fa990f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
+
+.button:hover {
+  background-color: #fba937;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
 
 .guitar {
   margin: auto;
   margin-bottom: 50px;
 	width: 1215px;
+  height: 200px;
+  background: #8F642F;
+}
+
+.guitar_tabs {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 500px;
   height: 200px;
   background: #8F642F;
 }
@@ -64,55 +142,50 @@ button {
 	border-right: 2px solid #CCB266;
 }
 
-.dots1 {
+
+
+
+
+.dots {
   position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.dots .dot1 {
   margin-top: 90px;
   margin-left: 358px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3d3d29;
+  background: #3d3d29
 }
 
-.dots2 {
-  position: absolute;
+.dots .dot2 {
   margin-top: 90px;
   margin-left: 520px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3d3d29;
+  background: #3d3d29
 }
 
-.dots3 {
-  position: absolute;
+.dots .dot3 {
   margin-top: 90px;
   margin-left: 682px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3d3d29;
+  background: #3d3d29
 }
 
-.dots4 {
-  position: absolute;
+.dots .dot4 {
   margin-top: 40px;
   margin-left: 925px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3d3d29;
+  background: #3d3d29
 }
 
-.dots5 {
-  position: absolute;
+.dots .dot5 {
   margin-top: 140px;
   margin-left: 925px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3d3d29;
+  background: #3d3d29
 }
+
+
+
+
 
 .string1 {
   position: absolute;
@@ -162,13 +235,16 @@ button {
   background: #b8b894;
 }
 
+
+
+
+
 .notes {
   position: absolute;
-  width: 1075px;
+  width: 1200px;
   height: 200px;
-  margin-left: -10px;
+  margin-left: -80px;
   margin-top: -10px;
-
 }
 
 .notes .notes1 ul {
@@ -193,7 +269,7 @@ button {
 }
 
 .notes .notes1 :empty{
-   opacity: 0;
+  opacity: 0;
 }
 
 .notes .notes2 ul li {
@@ -294,4 +370,16 @@ button {
 
 .notes .notes6 :empty{
    opacity: 0;
+}
+
+
+
+
+
+.break {
+  width: 1215px;
+  height: 3px;
+  margin: auto;
+  background: #3d3d29;
+  border-radius: 50%;
 }
