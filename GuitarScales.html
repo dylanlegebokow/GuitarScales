@@ -2,9 +2,10 @@
 
 <html>
 
-  <title>Guitar Note Finder</title>
+  <title>Guitar Scale Finder</title>
 
     <head>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" scr="tab_script.js"></script>
@@ -12,11 +13,13 @@
     </head>
 
     <body>
+      <div class="rectangle"><br>
 
       <h1>
         Guitar Scales Finder
       </h1>
 
+      <div class="shift">
       <div class="guitar">
         <div class="open_strings">
         <ul>
@@ -71,37 +74,43 @@
         </div>
 
       </div>
+      </div>
 
       <p>
 
       Root:
-       <select id="root" class="drop-down">
-         <option value="E">E</option>
-         <option value="F">F</option>
-         <option value="F#">F#</option>
-         <option value="G">G</option>
-         <option value="G#">G#</option>
-         <option value="A">A</option>
-         <option value="A#">A#</option>
-         <option value="B">B</option>
-         <option value="C">C</option>
-         <option value="C#">C#</option>
-         <option value="D">D</option>
-         <option value="D#">D#</option>
-       </select>
+      <select id="root" class="drop-down1">
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#</option>
+        <option value="G">G</option>
+        <option value="G#">G#</option>
+        <option value="A">A</option>
+        <option value="A#">A#</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="D">D</option>
+        <option value="D#">D#</option>
+      </select>
 
-       Scale:
-       <select id="type" class="drop-down">
-         <option value="Minor Pentatonic">Minor Pentatonic</option>
-         <option value="Major Pentatonic">Major Pentatonic</option>
-         <option value="Major">Major</option>
-         <option value="Minor">Minor</option>
-         <option value="Harmonic Major">Harmonic Major</option>
-         <option value="Harmonic Minor">Harmonic Minor</option>
-         <option value="Melodic Major">Melodic Major</option>
-       </select>
+      Scale:
+      <select id="type" class="drop-down">
+        <option value="Ionian">Ionian</option>
+        <option value="Dorian">Dorian</option>
+        <option value="Phrygian">Phrygian</option>
+        <option value="Lydian">Lydian</option>
+        <option value="Mixolydian">Mixolydian</option>
+        <option value="Aeolian">Aeolian</option>
+        <option value="Locrian">Locrian</option>
+        <option value="Major Pentatonic">Major Pentatonic</option>
+        <option value="Minor Pentatonic">Minor Pentatonic</option>
+        <option value="Harmonic Major">Harmonic Major</option>
+        <option value="Harmonic Minor">Harmonic Minor</option>
+        <option value="Blues">Blues</option>
+      </select>
 
-        <br><br>
+      <br><br>
 
       <button onclick="launch()" class="button"><span>
          GET SCALE
@@ -112,6 +121,7 @@
 
       <p class="paragraph2" id="varText" class="p2"></p>
 
+      </div>
     </body>
 
 </html>

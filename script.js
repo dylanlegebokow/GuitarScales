@@ -3,13 +3,17 @@ var counter = 0;
 var frets = 12;
 
 var minorPentatonic = "The minor pentatonic scale is the most widely used in lead guitar. It can be played in five different, distinct shapes.";
-var majorPentatonic = "The major pentatonic scale can be seen as playing a minor pentatonic of that scale but slid down three frets on the guitar neck. Thus, it is same to say that the major pentatonic for scale of base X is the same as the minor pentatonic for the scale for base X-3 frets.";
-var major = "This is a major scale.";
-var minor = "This is a minor scale.";
-var harmonicMajor = "This is the harmonic major scale.";
-var harmonicMinor = "This is the harmonic minor scale.";
-var melodicMajor = "This is the melodic major scale.";
-
+var majorPentatonic = "The major pentatonic scale is the same as playing the minor pentatonic slid down three frets on the guitar neck. Thus, the C major pentatonic scale is the same as the A minor pentatonic scale.";
+var ionian = "The Ionian mode, also known as the natural major scale, is the first of the seven musical modes.";
+var aeolian = "The Aeolian mode, also known as the natural minor scale, is the sixth of the seven musical modes. The Aeolian mode is the scale that appears when the Ionian mode (natural major scale) is started from the sixth note, ending a full octave above. Thus, the C Ionian mode is the same as the A Aeolian mode.";
+var harmonicMajor = "The harmonic major is similar to the Ionian mode (natural major scale) except for a lowered sixth note.";
+var harmonicMinor = "The harmonic minor is similar to the Aeolian mode (natural minor scale) except for a raised seventh note.";
+var dorian = "The Dorian mode is the second of the seven musical modes. It is similar to the natural minor scale (Aeolian mode) except for the raised sixth note. The Dorian mode is the minor scale that appears when the Ionian mode (natural major scale) is started from the second note, and ending a full octave above. Thus, the C Ionian mode is the same as the D Dorian mode.";
+var phrygian = "The Phrygian mode is the third of the seven musical modes. It is similar to the natural minor scale (Aeolian mode) except for the lowered second note. The Phrygian mode is the minor scale that appears when the Ionian mode (natural major scale) is started from the thrid note, and ending a full octave above. Thus, the C Ionian mode is the same as the E Phrygian mode.";
+var lydian = "The Lydian mode is the fourth of the seven musical modes. It is similar to the natural major scale (Ionian mode) except for the raised fourth note. The Lydian mode is the major scale that appears when the Ionian mode (natural major scale) is started from the fourth note, and ending a full octave above. Thus, the C Ionian mode is the same as the F Lydian mode.";
+var mixolydian = "The Mixolydian mode is the fifth of the seven musical modes. It is similar to the natural major scale (Ionian mode) except for the lowered seventh note. The Mixolydian mode is the major scale that appears when the Ionian mode (natural major scale) is started from the fifth note, and ending a full octave above. Thus, the C Ionian mode is the same as the G Mixolydian mode.";
+var locrian = "The Locrian mode is the seventh of the seven musical modes. It is similar to the natural minor scale (Aeolian mode) except for the lowered second and fifth notes. The Locrian mode is the minor scale that appears when the Ionian mode (natural major scale) is started from the seventh note, and ending a full octave above. Thus, the C Ionian mode is the same as the B Locrian mode.";
+var blues = "The blues scale is similar to the minor pentatonic with an additional lowered fifth note.";
 
 // Edits the array of notes to get an array only with the notes in the scale
 function getChord(chord_array, string_array) {
@@ -78,11 +82,16 @@ function getFullChord(y, x) {
   switch(y) {
     case "Minor Pentatonic": return [(x+0)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+10)%frets];
     case "Major Pentatonic": return [(x-3)%frets, (x+0)%frets, (x+2)%frets, (x+4)%frets, (x+7)%frets, (x+9)%frets];
-    case "Major": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+5)%frets, (x+7)%frets, (x+9)%frets, (x+11)%frets];
-    case "Minor": return [(x+0)%frets, (x+2)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+10)%frets];
+    case "Ionian": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+5)%frets, (x+7)%frets, (x+9)%frets, (x+11)%frets];
+    case "Dorian": return [(x+0)%frets, (x+2)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+9)%frets, (x+10)%frets];
+    case "Phrygian": return [(x+0)%frets, (x+1)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+10)%frets];
+    case "Lydian": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+6)%frets, (x+7)%frets, (x+9)%frets, (x+11)%frets];
+    case "Mixolydian": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+5)%frets, (x+7)%frets, (x+9)%frets, (x+10)%frets];
+    case "Aeolian": return [(x+0)%frets, (x+2)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+10)%frets];
+    case "Locrian": return [(x+0)%frets, (x+1)%frets, (x+3)%frets, (x+5)%frets, (x+6)%frets, (x+8)%frets, (x+10)%frets];
     case "Harmonic Major": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+11)%frets];
     case "Harmonic Minor": return [(x+0)%frets, (x+2)%frets, (x+3)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+11)%frets];
-    case "Melodic Major": return [(x+0)%frets, (x+2)%frets, (x+4)%frets, (x+5)%frets, (x+7)%frets, (x+8)%frets, (x+10)%frets];
+    case "Blues": return [(x+0)%frets, (x+3)%frets, (x+5)%frets, (x+6)%frets, (x+7)%frets, (x+10)%frets];
     default: return "error";
   }
 }
@@ -99,11 +108,26 @@ function getText() {
       case "Major Pentatonic":
         text = majorPentatonic;
         break;
-      case "Major":
-        text = major;
+      case "Ionian":
+        text = ionian;
         break;
-      case "Minor":
-        text = minor;
+      case "Dorian":
+        text = dorian;
+        break;
+      case "Phrygian":
+        text = phrygian;
+        break;
+      case "Lydian":
+        text = lydian;
+        break;
+      case "Mixolydian":
+        text = mixolydian;
+        break;
+      case "Aeolian":
+        text = aeolian;
+        break;
+      case "Locrian":
+        text = locrian;
         break;
       case "Harmonic Major":
         text = harmonicMajor;
@@ -111,8 +135,8 @@ function getText() {
       case "Harmonic Minor":
         text = harmonicMinor;
         break;
-      case "Melodic Major":
-        text = melodicMajor;
+      case "Blues":
+        text = blues;
         break;
       default:
         text = "";
@@ -126,7 +150,7 @@ function launch() {
 
   $("#div1").fadeOut(0);
   clearArrays();
-  $("#div1").fadeIn(500);
+  $("#div1").fadeIn(350);
 
   var string6 = ['E','F','F#','G','G#','A','A#','B','C','C#','D','D#','E','F','F#'];
 	var	string5 = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
@@ -167,6 +191,6 @@ function launch() {
 
   $("#varText").fadeOut(0);
   getText();
-  $("#varText").fadeIn(500);
+  $("#varText").fadeIn(350);
 
 }
