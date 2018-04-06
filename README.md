@@ -5,7 +5,7 @@ This is a guitar scale display I created using HTML, CSS, and JavaScript. This i
 - None
 
 ### Viewing the Website
-To view the site, go to http://dylanlegebokow.github.io/GuitarScales
+To view the site, go to https://dylanlegebokow.github.io/GuitarScales
 
 ### Installing Method 1 - Command Line
 To use this method, make sure you can access java commands using the command line 
